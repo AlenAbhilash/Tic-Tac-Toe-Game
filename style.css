@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    margin-left: 650px;
+    display: block;
+    background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
+    font-size: 40px;
+    width: 400px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: transparent;
+    transition: all 0.5s ease-in;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.h1:hover {
+    background-image: linear-gradient(280deg, rgb(136, 29, 186), rgb(202, 28, 196) 50%);
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+video#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    height: 900px;
+}
+
+.container {
+    margin-top: 100px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background-image: linear-gradient(280deg, rgb(150, 28, 202), rgb(113, 33, 113) 30%);
+    border-radius: 25px;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 1rem;
+    border: none;
+    font-size: 8vmin;
+    color: red;
+    background-color: rgb(223, 147, 223);
+    transition: all 0.5s ease-in;
+}
+
+.box:hover {
+    transform: scale(1.07);
+}
+
+#reset {
+    margin-top: 100px;
+    background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    transition: all 0.3 ease-in;
+}
+
+#reset:hover {
+    background-image: linear-gradient(280deg, rgb(136, 29, 186), rgb(202, 28, 196) 50%);
+}
+
+#new-btn {
+    margin-top: 20px;
+    background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    transition: all 0.3 ease-in;
+}
+
+#new-btn:hover {
+    background-image: linear-gradient(280deg, rgb(136, 29, 186), rgb(202, 28, 196) 50%);
+}
+
+#msg {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#msg-container {
+    margin-top: 10px;
+    font-family: 'Black Ops One', cursive;
+    background-image: linear-gradient(280deg, rgb(91, 7, 127), rgb(120, 28, 105) 30%);
+    border-radius: 25px;
+    width: 400px;
+    height: 150px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 780px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .h1 {
+        margin-left: 76px;
+        display: block;
+        background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
+        font-size: 40px;
+        width: 400px;
+        color: white;
+        font-weight: bolder;
+        border-radius: 10px;
+        border-color: transparent;
+        font-family: 'Black Ops One', cursive;
+    }
+
+    .container {
+        margin-top: 100px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reset {
+        margin-top: 100px;
+        background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
+        font-size: 18px;
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+        border-color: transparent;
+        color: white;
+        transition: all 0.3 ease-in;
+    }
+
+    #reset:hover {
+        background-image: linear-gradient(280deg, rgb(136, 29, 186), rgb(202, 28, 196) 50%);
+    }
+
+    #msg-container {
+        margin-top: 20px;
+        font-family: 'Black Ops One', cursive;
+        background-image: linear-gradient(280deg, rgb(91, 7, 127), rgb(120, 28, 105) 30%);
+        border-radius: 25px;
+        width: 400px;
+        height: 150px;
+    }
+
+    #msg {
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    #new-btn {
+        margin-top: 10px;
+        background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
+        font-size: 18px;
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+        border-color: transparent;
+        color: white;
+        transition: all 0.3 ease-in;
+    }
+
+    #new-btn:hover {
+        background-image: linear-gradient(280deg, rgb(136, 29, 186), rgb(202, 28, 196) 50%);
+    }
+
+    video#background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box:hover {
+        transform: scale(1.07);
+    }
+}
