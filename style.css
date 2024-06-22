@@ -122,25 +122,29 @@ main {
 }
 
 #msg-container {
-    margin-top: 10px;
+    margin: 10px auto;
     font-family: 'Black Ops One', cursive;
     background-image: linear-gradient(280deg, rgb(91, 7, 127), rgb(120, 28, 105) 30%);
     border-radius: 25px;
     width: 400px;
     height: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
 .hide {
     display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 780px) {
+@media screen and (min-width: 600px) and (max-width: 780px) {
     * {
         margin: 0;
         padding: 0;
     }
 
     .h1 {
+        align-items: center;
+    display: inline-block;
         margin-left: 76px;
         display: block;
         background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
