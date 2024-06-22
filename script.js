@@ -39,7 +39,7 @@ box.forEach((box) => {
 });
 const gameDraw = () => {
     msg.innerText = "Game Is Tie";
-    msgcontainer.style.display = "inline-block";
+    msgcontainer.style.display = "block";
     msgcontainer.classList.remove("hide");
     disabledbox();
 };
@@ -70,7 +70,7 @@ const enablebox = () => {
 const showwinner = (winner) => {
     msg.innerText = `The Winner Of The Game Is "Player ${winner}"`;
     msgcontainer.classList.remove("hide");
-    msgcontainer.style.display = "inline-block";
+    msgcontainer.style.display = "block";
     disabledbox();
 };
 const checkwinner = () => {

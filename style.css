@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 .parent-container {
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .h1 {
     align-items: center;
     display: inline-block;
