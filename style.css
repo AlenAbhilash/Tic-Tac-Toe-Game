@@ -36,9 +36,13 @@ body {
 }
 
 video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 main {
@@ -136,20 +140,30 @@ main {
     display: none;
 }
 
-@media screen and (min-width: 600px) and (max-width: 780px) {
+@media screen and (min-width: 300px) and (max-width: 780px) {
     * {
         margin: 0;
         padding: 0;
     }
-
+    .game {
+        background-image: linear-gradient(280deg, rgb(150, 28, 202), rgb(113, 33, 113) 30%);
+        border-radius: 25px;
+        height: 400px;
+        width: 330px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
     .h1 {
         align-items: center;
-    display: inline-block;
+        display: inline-block;
         margin-left: 76px;
         display: block;
         background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
-        font-size: 40px;
-        width: 400px;
+        font-size: 20px;
+        width: 200px;
         color: white;
         font-weight: bolder;
         border-radius: 10px;
@@ -168,9 +182,9 @@ main {
     #reset {
         margin-top: 100px;
         background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
-        font-size: 18px;
+        font-size: 15px;
         width: 150px;
-        height: 50px;
+        height: 30px;
         border-radius: 20px;
         border-color: transparent;
         color: white;
@@ -186,13 +200,13 @@ main {
         font-family: 'Black Ops One', cursive;
         background-image: linear-gradient(280deg, rgb(91, 7, 127), rgb(120, 28, 105) 30%);
         border-radius: 25px;
-        width: 400px;
-        height: 150px;
+        width: 300px;
+        height: 100px;
     }
 
     #msg {
         color: white;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: bolder;
     }
 
@@ -201,7 +215,7 @@ main {
         background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
         font-size: 18px;
         width: 150px;
-        height: 50px;
+        height: 30px;
         border-radius: 20px;
         border-color: transparent;
         color: white;
@@ -213,9 +227,14 @@ main {
     }
 
     video#background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        z-index: -1;
+
     }
 
     .box:hover {
