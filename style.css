@@ -104,10 +104,10 @@ main {
 }
 
 #new-btn {
-    margin-top: 20px;
+    margin-top: 5px;
     background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
     font-size: 18px;
-    width: 150px;
+    width: 120px;
     height: 50px;
     border-radius: 20px;
     border-color: transparent;
@@ -131,7 +131,7 @@ main {
     background-image: linear-gradient(280deg, rgb(91, 7, 127), rgb(120, 28, 105) 30%);
     border-radius: 25px;
     width: 400px;
-    height: 150px;
+    height: 130px;
     justify-content: center;
     align-items: center;
 }
