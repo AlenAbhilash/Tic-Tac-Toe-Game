@@ -20,23 +20,26 @@ const winpattern = [
 box.forEach((box) => {
     box.addEventListener("click", () => {
         console.log("the Box is Click");
-        if (turno) { //palyer o
+        if (turno) { // player o
             box.innerText = "o";
             box.style.color = "red";
             turno = false;
-        } else { //palyer x
+        } else { // player x
             box.style.color = "blue";
             box.innerText = "x";
             turno = true;
         }
         box.disabled = true;
         count++;
-        let isWinner = checkwinner();
-        if (count === 9 && !isWinner) {
+        if (checkwinner()) {
+            return; 
+        }
+        if (count === 9) {
             gameDraw();
         }
     });
 });
+
 const gameDraw = () => {
     msg.innerText = "Game Is Tie";
     msgcontainer.style.display = "block";
@@ -52,13 +55,11 @@ const resetgame = () => {
     msgcontainer.classList.add("hide");
 };
 
-
-
 const disabledbox = () => {
     for (let boxs of box) {
         boxs.disabled = true;
     }
-}
+};
 
 const enablebox = () => {
     for (let boxs of box) {
@@ -66,28 +67,33 @@ const enablebox = () => {
         boxs.innerText = "";
         boxs.style.backgroundColor = "";
     }
-}
+};
+
 const showwinner = (winner) => {
     msg.innerText = `The Winner Of The Game Is "Player ${winner}"`;
     msgcontainer.classList.remove("hide");
     msgcontainer.style.display = "block";
     disabledbox();
 };
+
 const checkwinner = () => {
     for (let pattern of winpattern) {
         let pos1val = box[pattern[0]].innerText;
         let pos2val = box[pattern[1]].innerText;
         let pos3val = box[pattern[2]].innerText;
-        if (pos1val != "" && pos2val != "" && pos3val != "") {
+        if (pos1val !== "" && pos2val !== "" && pos3val !== "") {
             if (pos1val === pos2val && pos2val === pos3val) {
                 box[pattern[0]].style.backgroundColor = "rgb(202, 28, 196)";
                 box[pattern[1]].style.backgroundColor = "rgb(202, 28, 196)";
                 box[pattern[2]].style.backgroundColor = "rgb(202, 28, 196)";
                 console.log("winner", pos1val);
                 showwinner(pos1val);
+                return true;
             }
         }
     }
+    return false;
 };
+
 newbtn.addEventListener("click", resetgame);
 reset.addEventListener("click", resetgame);
