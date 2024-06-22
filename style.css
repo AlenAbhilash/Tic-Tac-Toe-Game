@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
+.parent-container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .h1 {
-    margin-left: 650px;
-    display: block;
+    align-items: center;
+    display: inline-block;
     background-image: linear-gradient(280deg, rgb(202, 28, 196), rgb(136, 29, 186) 50%);
     font-size: 40px;
     width: 400px;
@@ -144,7 +148,7 @@ main {
         font-weight: bolder;
         border-radius: 10px;
         border-color: transparent;
-        font-family: 'Black Ops One', cursive;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     .container {
